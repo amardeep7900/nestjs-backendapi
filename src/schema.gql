@@ -1,0 +1,29 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Mutation {
+  create(input: personinput!): persondto!
+  delete(id: String!): persondto!
+  update(id: String!, input: personinput!): persondto!
+}
+
+type Query {
+  all: [persondto!]!
+  findOne(id: String!): persondto!
+}
+
+type persondto {
+  age: Int!
+  description: String!
+  id: ID!
+  name: String!
+  title: String!
+}
+
+input personinput {
+  age: Int!
+  description: String!
+  name: String!
+  title: String!
+}

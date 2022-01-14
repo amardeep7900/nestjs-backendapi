@@ -1,0 +1,24 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type persondto {
+  id: ID!
+  description: String!
+  title: String!
+}
+
+type Query {
+  all: [persondto!]!
+}
+
+type Mutation {
+  create(input: personinput!): persondto!
+}
+
+input personinput {
+  name: String!
+  age: Float!
+  title: String!
+  description: String!
+}
